@@ -1,5 +1,5 @@
 <?php
-    abstract class Vista{
+    abstract class AbstractVista{
         protected $ret = "";
         protected $modelo;
 
