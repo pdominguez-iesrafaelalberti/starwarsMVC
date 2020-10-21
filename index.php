@@ -1,13 +1,12 @@
 <?php
 
 
-
 $requestUrl = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 $requestString = substr($requestUrl, strlen($baseUrl));
 $urlParams = explode('/', $requestString);
 print_r($urlParams);
 
-switch ($_GET['action']) {
+switch (isset($_GET['action'])) {
     case 'ver':
 
         break;
