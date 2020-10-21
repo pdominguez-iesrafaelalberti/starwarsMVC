@@ -1,5 +1,6 @@
 <?php
-class ListadoPersonajeVista {    
+require "AbstractVista.php";
+class ListadoPersonajeVista  extends AbstractVista {    
 
 function __construct($model)    {      
     $this->modelo = $model;    
